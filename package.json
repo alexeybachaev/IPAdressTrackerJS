@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html  --out-dir=build"
+    "build": "parcel build index.html  --out-dir=build",
+    "deploy":"rm -rf dist/ && npm run build && gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "leaflet": "^1.9.4"
   }
 }
