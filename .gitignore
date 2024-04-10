@@ -18,3 +18,5 @@ build/
 dist/
 .cache/
 *.md
+!README.md
+node_modules/
